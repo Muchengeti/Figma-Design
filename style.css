@@ -63,7 +63,7 @@ nav ul {
 
 }
 
-.nat-link:hover{
+.nav-link:hover a{
   transform: translateY(-8px);
 }
 
@@ -90,6 +90,7 @@ nav ul {
   height: 1860px;
   left: 0px;
   top: -690px; */
+  
 }
 
 header {
@@ -304,6 +305,7 @@ header .hero-image .photo-bg {
   pointer-events: auto;
   transform: translateY(0);
 }
+
 
 /* Hidden Items */
 
