@@ -1,310 +1,197 @@
 * {
-  box-sizing: border-box;
+  
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto Mono", monospace;
 }
 
-/* Navigation */
-
-.nav-container {
- 
-  height: 72px;
-  margin-top: 0;
-  top: 50px;
-  z-index: 500;
-  
-
-  font-family: Roboto Mono;
-font-style: normal;
-font-weight: 300;
-font-size: 35px;
-color: #FFFFFF;
-
-align-items: left;
-
-
-
-position: absolute;
-width: 719.81px;
-line-height: 41px;
-left: 414px;
-top: 50px;
-}
-
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 72px;
-  margin: 0 auto;
-
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  margin: 0 auto;
-}
-
-
-.nav-items li {
-  list-style: none;
-  margin-right: 100px;
-  transition: 300ms;
-
-}
-
-.nav-link:hover a{
-  transform: translateY(-8px);
-}
-
-.nav-items li a {
-  color: #021718;
-  font-size: 35px;
-  font-family: "Roboto Mono", monospace;
-  text-decoration: none;
-  margin: 0 auto;
-}
-
-/* Header */
-
-.header-container {
+.page-1 {
   background: url("images/background.png");
+  display: flex;
   background-position: left;
+  position: relative;
   
   height: calc(100vh + 72px);
-  display: flex;
-  align-items: center;
-
-  /* position: absolute;
-  width: 2000.68px;
-  height: 1860px;
-  left: 0px;
-  top: -690px; */
-  
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header h1 {
-  position: absolute;
-width: 1009px;
-height: 141px;
-left: 215px;
-top: 131px;
-
-font-family: Roboto Mono, monospace;
-font-style: normal;
-font-weight: normal;
-font-size: 120px;
-line-height: 141px;
-/* identical to box height */
-
-text-align: center;
-color: #FFFFFF;
 
 
-}
-
-header h4 {
-  position: absolute;
-width: 568px;
-height: 53px;
-left: 436px;
-top: 315px;
-
-font-family: Roboto Mono, monospace;
-font-style: normal;
-font-weight: normal;
-font-size: 45px;
-line-height: 53px;
-/* identical to box height */
-
-text-align: center;
-
-color: #FFFFFF;
-}
-
-.left-text{
-  position: absolute;
-width: 199px;
-height: 275px;
-left: 116px;
-top: 265px;
-
-font-family: Roboto Mono;
-font-style: normal;
-font-weight: 300;
-font-size: 30px;
-line-height: 10rem;
-text-align: left;
-color: #000000;
-}
-header p {
-  position: absolute;
-  width: 181px;
-  height: 35px;
-  left: 629px;
-  top: 382px;
-  
-  font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: light;
-  font-size: 30px;
-  line-height: 35px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
   text-align: center;
 
-  color: #FFFFFF;
+  
+  position:relative;
+  top: 5%;
+  left: 38%;
+}
+
+li {
+  display: inline; 
+}
+
+li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 60px;
+  padding: 0px 60px;
+}
+
+li a:hover {
+  color: white;
+}
+
+.title-1 h1 {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+
+  text-align: left;
+
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 141px;
+  color: white;
+  
+}
+.title-2 h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: left;
+
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 141px;
+  color: white;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-3 h1 {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+
+  text-align: left;
+
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 141px;
+  color: white;
+}
+
+.subtitle-1 h4 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 50px;
+  line-height: 141px;
+  color: white;
+  width: 100%;
+
 }
 
 .button{
   color: #ffffff;
   font-size: 24px;
   text-decoration: none;
-  background: url("images/arrow.png");
+  
 
   border: 2px solid white;
   
-  padding: 12px 48px;
-  display: inline-block;
-  transition: 300ms;
-
   position: absolute;
-  width: 390px;
-  height: 96px;
-  left: 525px;
-  top: 600px;
-  text-align: center;
+  top: 80%;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
 
   
 }
 
-a.button:hover {
-  transform: translateY(-8px);
-}
-
-
-/* Social Icons */
-
-.social-icons {
-  display: flex;
-  align-items: center;
-}
-
-.social-icons a {
-  margin: 0 24px;
-}
-
-.social-icons a:nth-of-type(1) {
-  margin-left: 0;
-}
-
-/* Hero image */
-
-header .hero-image {
-  position: relative;
-}
-
-header .hero-image img {
-  transition: 300ms;
-  position: relative;
-  z-index: 100;
-}
-
-header .hero-image img:hover {
-  transform: rotate(-6deg);
-}
-
-header .hero-image .photo-bg {
+.personal-info-1 {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 45px;
-  top: 24px;
-
-  background: #44a1a0;
-  transform: rotate(-6deg);
+  top: 75%;
+  left: 1%;
+  padding: 5px;
+  
+  
 }
 
-/* Search Box */
-
-.search-box {
-  width: 1200px;
-  margin: 0 auto;
+.personal-info-2 {
+  position: absolute;
+  top: 75%;
+  left: 83%;
+  padding: 5px;
   text-align: right;
-  position: relative;
-  top: 0;
-  z-index: 101;
-
-  transition: 300ms;
+}
+a.button:hover {
+  color: black;
+  background-color: white;
 }
 
-.search-box.active {
-  top: 72px;
-}
 
-.search-box input {
-  background: #fffffa;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 0px 0px 8px 8px;
 
-  font-size: 24px;
-  line-height: 42px;
-  border: 0;
-  padding: 12px 48px;
-}
 
-.search-box input::placeholder {
-  color: #b3b3b3;
-}
-
-/* Search & Close Buttons */
-
-.nav-btn-container {
+.page-2 {
+  background: white;
   display: flex;
-  position: relative;
+  background-position: left;
+  
+  height: calc(100vh + 72px);
 }
 
-.nav-btn-container img {
+.page-2 title-software {
   position: absolute;
+  top: 60%;
+  left: 50%;
+  
+
+  text-align: left;
+
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 50px;
+  line-height: 141px;
+  color: white;
+
 }
 
-.nav-btn-container .close-btn {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-8px);
-  transition: 300ms;
-}
 
-.nav-btn-container .search-btn {
-  pointer-events: auto;
-  transition: 300ms;
-}
-
-.nav-btn-container.active .search-btn {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-8px);
-}
-
-.nav-btn-container.active .close-btn {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
 
 
 /* Hidden Items */
