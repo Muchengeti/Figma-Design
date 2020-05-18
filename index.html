@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   </head>
-  <body>
-
+  <body onload="startTime()">
+    
     <div>
       
       
@@ -47,9 +47,12 @@
           <div class="subtitle-1">
             <h4>Digital Portfolio</h4>
           </div>
+          
+          
+
 
           <a class="button" href="#">
-            &#8595; Introduction
+            &#8595; Journey
                 &#8595;
               </a>
               <div class="personal-info-1">
@@ -63,7 +66,7 @@
                 <p>Disicpline(s):</p>
                 <p>Platform Engineering</p>
                 <p>Full-Stack Development</p>
-                <p>UI/UX Design</p>
+                <p>UI / UX Design</p>
               </div>
               
       
@@ -82,7 +85,17 @@
       <div class="page-2">
 
         <div class="title-software">
-            <h1>FAMILY</h1>
+            <h1>SOFTWARE</h1>
+            
+          </div>
+
+      </div>
+
+      <div class="page-3">
+
+        <div class="title-design">
+            <h1>DESIGN</h1>
+            
           </div>
 
       </div>
@@ -95,7 +108,48 @@
     
     <script src="js/scripts.js"></script>
 
-    
+    <script>
+      function startTime() {
+
+        var today = new Date();
+        var d = today.getDay();
+        var h = today.getHours();
+        var date = today.getDate();
+        var month = today.getMonth();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+        var n = weekday[d];
+
+        var months = new Array(7);
+        months[0] = "Jan";
+        months[1] = "Feb";
+        months[2] = "Mar";
+        months[3] = "Apr";
+        months[4] = "May";
+        months[5] = "Jun";
+        months[6] = "Jul";
+        var c_month = months[month];
+
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        n + " " + c_month + " " + date + " " + h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+      </script>
     
   </body>
 </html>
