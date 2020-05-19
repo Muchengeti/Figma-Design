@@ -60,56 +60,24 @@ li a:hover {
 .title-1 h1 {
   position: absolute;
   top: 35%;
-  left: 25%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  display:inline-block;
 
-  text-align: left;
+  text-align: center;
 
   font-family: "Roboto Mono", monospace;
   text-decoration: none;
   font-style: normal;
   font-weight: bold;
-  font-size: 120px;
+  font-size: 140px;
   line-height: 141px;
   color: white;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   
 }
-.title-2 h1 {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
-  text-align: left;
-
-  font-family: "Roboto Mono", monospace;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 120px;
-  line-height: 141px;
-  color: white;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.title-3 h1 {
-  position: absolute;
-  top: 35%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-
-  text-align: left;
-
-  font-family: "Roboto Mono", monospace;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 120px;
-  line-height: 141px;
-  color: white;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
 .subtitle-1 h4 {
   position: absolute;
@@ -208,6 +176,61 @@ a.button:hover {
   line-height: 141px;
 }
 
+.project-1 {
+  position: absolute;
+  top: 150%;
+  left: 10%;
+}
+
+.project-1-discription {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  text-align: left;
+  width: 400px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.kd-logo {
+  display: flex;
+  background-position: left;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 150%;
+  left: 80%;
+}
+
+.project-2 {
+  position: absolute;
+  top: 190%;
+  left: 10%;
+  text-align: left;
+}
+
+.project-2-discription {
+  position: absolute;
+  top: 190%;
+  left: 50%;
+  text-align: left;
+  width: 400px;
+}
+
+.ws-logo {
+  display: flex;
+  background-position: left;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 190%;
+  left: 80%;
+}
 .page-3 {
   background: red;
   display: flex;
@@ -234,6 +257,7 @@ a.button:hover {
   font-size: 50px;
   line-height: 141px;
 }
+
 
 
 
